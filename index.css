@@ -1,0 +1,85 @@
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.place {
+    position: relative;
+    margin-top: 10%;
+    width: 800px;
+    height: 800px;
+    background-color: rgba(127, 255, 212, 0.555);
+}
+
+.firstSquare {
+    z-index: 1;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(230, 173, 173);
+}
+
+.secondSquare {
+    z-index: 1;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(173, 202, 230);
+}
+
+.chooseColor {
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px gray;
+    border-radius: 10px;
+}
+
+.greenBtn, .yellowBtn, .purpleBtn {
+    width: 30px;
+    height: 30px;
+}
+
+.greenBtn {
+    background-color: green;
+    border-radius: 25px;
+    border: solid 1px black;
+}
+
+.yellowBtn {
+    background-color: yellow;
+    border-radius: 25px;
+    border: solid 1px black;
+}
+
+.purpleBtn {
+    background-color: purple;
+    border-radius: 25px;
+    border: solid 1px black;
+}
+
+.choose {
+    border: dashed 5px rgba(83, 83, 83, 0.795);
+    width: 140px;
+    height: 140px;
+}
+
+.divide {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 130px;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+}
